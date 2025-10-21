@@ -158,7 +158,7 @@ if [ -z "$MAIN_DOCUMENT" ]; then
             warn "Guessing main document (fallback): '$MAIN_DOCUMENT', use '-m' to specify main latex document."
         else
             # Handle the case where no .tex files are found at all
-            error "No .tex files found in '$PROJECT_DIR'. Cannot determine main document."
+            err "No .tex files found in '$PROJECT_DIR'. Cannot determine main document."
             exit 1 # Or handle as appropriate for your script
         fi
     fi
